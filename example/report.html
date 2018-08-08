@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>API AutoTest Report</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body id="bg-color" class="bg-warning">
+    <div id="container" class="container">
+
+	    <!-- 报告标题 -->
+	    <div id="Headrow" class="row">
+      		<h1 id="HeadH1" align="center">
+      			<strong id="HeadTxt">API_AutoTest_Report  </strong>
+      			<small id="author">Sonny.zhang</small>
+      		</h1>
+      		</br>
+	    </div>
+		
+		<!-- 数据统计 -->
+		<div id="Totalrow" class="Totalrow">
+			<div class="jumbotron">
+				<!-- 测试执行时间、用例数 -->
+			    <div id="UTimerow" class="row">
+					<div class="col-xs-12 col-md-6">
+						<p role="presentation">
+							<span>
+								测试总耗时：<span class="label label-default">0:00:04.307585</span>
+							</span>
+						</p>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<p role="presentation">
+							<span>
+								用例总数：</small><span class="label label-primary">7</span>
+							</span>
+						</p>
+					</div>
+			    </div>
+
+				<!-- 用例失败成功统计 -->
+			    <div id="Amountrow" class="row">
+					<div id="Num1" class="col-xs-12 col-md-3">
+						<p role="presentation">
+							<span>
+								<small>成功用例数(Pass)：<span class="label label-success">3</span></small>
+							</span>
+						</p>
+					</div>
+					<div id="Num2" class="col-xs-12 col-md-3">
+						<p role="presentation">
+							<span>
+								<small>失败用例数(Fail)：<span class="label label-danger">2</span></small>
+							</span>
+						</p>
+					</div>
+					<div id="Num3" class="col-xs-12 col-md-3">
+						<p role="presentation">
+							<span>
+								<small>出错用例数(Error)：<span class="label label-warning">2</span></small>
+							</span>
+						</p>
+					</div>
+					<div id="Num4" class="col-xs-12 col-md-3">
+						<p role="presentation">
+							<span>
+								<small>未执行用例数(Block)：<span class="label label-default">1</span></small>
+							</span>
+						</p>
+					</div>
+			    </div>
+		    </div>
+		</div>
+
+		<!-- 测试计划 -->
+	    <div id="plans" class="row">
+    		<div id="plans-title" class="panel panel-primary">
+    			<div class="panel-heading">
+    				<strong><center class="text-uppercase">测试用例摘要</center></strong>
+    			</div>
+			</div>
+			<!-- 一个测试计划 -->
+			<div id="plan1">
+				<table class="table table-striped">
+					<center><caption>测试计划【项目名称：APItest, 计划名称：user_operation】</caption></center>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>执行编号</th>
+							<th>用例ID</th>
+							<th>用例外部ID</th>
+							<th>用例名称</th>
+							<th>测试套件</th>
+							<th>执行结果</th>
+							<th>运行时间</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td>Pass</td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td><p class="label label-danger">Error</p></td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td><p class="label label-danger">Fail</p></td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- 一个测试计划 -->
+			<div id="plan2">
+				<table class="table table-striped">
+					<center><caption>测试计划【项目名称：APItest, 计划名称：user_operation】</caption></center>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>执行编号</th>
+							<th>用例ID</th>
+							<th>用例外部ID</th>
+							<th>用例名称</th>
+							<th>测试套件</th>
+							<th>执行结果</th>
+							<th>运行时间</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td>Pass</td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td><p class="label label-danger">Error</p></td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td><p class="label label-danger">Fail</p></td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	    </div>
+
+		<!-- 测试用例 -->
+	    <div class="row">
+    		<div class="panel panel-primary">
+    			<div class="panel-heading">
+    				<strong><center class="text-uppercase">用例执行明细</center></strong>
+    			</div>
+			</div>
+
+			<!-- 计划标题 -->
+			<center><div class="panel panel-danger" style="width:1000px">
+    			<div class="panel-heading">
+    				<strong><center class="text-uppercase">测试计划标题</center></strong>
+    			</div>
+			</div></center>
+
+			<!-- 一个测试用例 -->
+			<div>
+				<table class="table table-striped">
+					<center><caption>测试计划【项目名称：APItest, 计划名称：user_operation】</caption></center>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>执行编号</th>
+							<th>用例ID</th>
+							<th>用例外部ID</th>
+							<th>用例名称</th>
+							<th>测试套件</th>
+							<th>执行结果</th>
+							<th>运行时间</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td>Pass</td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td><p class="label label-danger">Block</p></td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td>Pass</td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- 计划标题 -->
+			<center><div class="panel panel-danger" style="width:1000px">
+    			<div class="panel-heading">
+    				<strong><center class="text-uppercase">测试计划标题</center></strong>
+    			</div>
+			</div></center>
+
+			<!-- 一个测试用例 -->
+			<div>
+				<table class="table table-striped">
+					<center><caption>测试计划【项目名称：APItest, 计划名称：user_operation】</caption></center>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>执行编号</th>
+							<th>用例ID</th>
+							<th>用例外部ID</th>
+							<th>用例名称</th>
+							<th>测试套件</th>
+							<th>执行结果</th>
+							<th>运行时间</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td>Pass</td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td><p class="label label-danger">Block</p></td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+						<tr>
+							<th scope="row">151</th>
+							<td>20180804110924</td>
+							<td>1079</td>
+							<td>APItest-1</td>
+							<td>获取token</td>
+							<td>获取token</td>
+							<td>Pass</td>
+							<td>2018-08-04 11:09:24</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+	    </div>
+    </div>
+  </body>
+</html>

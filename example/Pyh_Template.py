@@ -40,7 +40,7 @@ plans_title = "测试用例摘要"
 PlansTitle = Plans << div(id="plans-title", cl="panel panel-primary") << div(cl="panel-heading") << strong() << center(plans_title, cl="text-uppercase")
 
 # --一个测试计划-- start
-Plan1 = Plans << div(id="plan1", cl="col-xs-12 col-md-12") << table(cl="table table-striped")
+Plan1 = Plans << div(id="plan1") << table(cl="table table-striped  bg-success")
 # ---一个标题--
 plan1_title = "测试计划【项目名称：APItest, 计划名称：user_operation】"
 Plan1 << center() << caption(plan1_title)
@@ -53,8 +53,8 @@ Thead1 << tr() << th(thead1[0]) + th(thead1[1]) + th(thead1[2]) + th(thead1[3]) 
 tbody1 = ["151", "20180804110924", "1079", "APItest-1", "获取token", "获取token", "Pass", "2018-08-04 11:09:24"]
 Error = "Error"
 Tbody1 = Plan1 << tbody()
-Tbody1 << tr() << th(tbody1[0], scope="row") + td(tbody1[1]) + td(tbody1[2]) + td(tbody1[3]) + td(tbody1[4]) + td(tbody1[5]) + td(tbody1[6]) + td(tbody1[7])
-Tbody1 << tr() << th(tbody1[0], scope="row") + td(tbody1[1]) + td(tbody1[2]) + td(tbody1[3]) + td(tbody1[4]) + td(tbody1[5]) + td(p(Error, cl="label label-danger")) + td(tbody1[7])
+Tbody1 <<tr() << th(tbody1[0], scope="row") + td(tbody1[1]) + td(tbody1[2]) + td(tbody1[3]) + td(tbody1[4]) + td(tbody1[5]) + td(tbody1[6]) + td(tbody1[7])
+Tbody1 <<tr() << th(tbody1[0], scope="row") + td(tbody1[1]) + td(tbody1[2]) + td(tbody1[3]) + td(tbody1[4]) + td(tbody1[5]) + td(p(Error, cl="label label-danger")) + td(tbody1[7])
 # --一个测试计划-- end
 # 测试计划 end
 
@@ -63,23 +63,49 @@ Cases = Container << div(cl="row")
 # --栏目标题--
 cases_title = "用例执行明细"
 CasesTitle = Cases << div(cl="panel panel-primary") << div(cl="panel-heading") << strong(center(cases_title, cl="text-uppercase"))
+# --一个计划标题--
+Cplan_title = "这是测试计划标题"
+CplanTitle = Cases << center() << div(cl="panel panel-danger", style="width:1000px") << div(cl="panel-heading") << strong(center(Cplan_title, cl="text-uppercase"))
 # --一个测试用例-- start
-Case1 = Cases << div(cl="col-xs-12 col-md-12") << table(cl="table table-striped")
-# ---一个标题--
-Case1_title = "测试计划【项目名称：APItest, 计划名称：user_operation】"
-Case1 << center() << caption(plan1_title)
+Case1 = Cases << div() << table(cl="table table-striped  bg-success")
+# ---一个用例标题--
+case1_title = "测试计划【项目名称：APItest, 计划名称：user_operation】"
+Case1 << center() << caption(case1_title)
 # --一个列表--
 # 表头
 thead1 = ["ID", "执行编号", "用例ID", "用例外部ID", "用例名称", "用例套件", "执行结果", "运行时间"]
-Case1Thead1 = Case1 << thead()
-Case1Thead1 << tr() << th(thead1[0]) + th(thead1[1]) + th(thead1[2]) + th(thead1[3]) + th(thead1[4]) + th(thead1[5]) + th(thead1[6]) + th(thead1[7])
+Case1Thead1 = Case1 << thead() << tr()
+Case1Thead1 << th(thead1[0]) + th(thead1[1]) + th(thead1[2]) + th(thead1[3]) + th(thead1[4]) + th(thead1[5]) + th(thead1[6]) + th(thead1[7])
 # 表体
 tbody1 = ["151", "20180804110924", "1079", "APItest-1", "获取token", "获取token", "Pass", "2018-08-04 11:09:24"]
 Error = "Error"
 Case1Tbody1 = Case1 << tbody()
 Case1Tbody1 << tr() << th(tbody1[0], scope="row") + td(tbody1[1]) + td(tbody1[2]) + td(tbody1[3]) + td(tbody1[4]) + td(tbody1[5]) + td(tbody1[6]) + td(tbody1[7])
 Case1Tbody1 << tr() << th(tbody1[0], scope="row") + td(tbody1[1]) + td(tbody1[2]) + td(tbody1[3]) + td(tbody1[4]) + td(tbody1[5]) + td(p(Error, cl="label label-danger")) + td(tbody1[7])
-# --一个测试计划-- end
-# 测试计划 end
+# --一个测试用例-- end
+
+
+# --一个计划标题--
+Cplan_title = "这是测试计划标题"
+CplanTitle = Cases << center() << div(cl="panel panel-danger", style="width:1000px") << div(cl="panel-heading") << strong(center(Cplan_title, cl="text-uppercase"))
+# --一个测试用例-- start
+Case1 = Cases << div() << table(cl="table table-striped  bg-success")
+# ---一个用例标题--
+case1_title = "测试计划【项目名称：APItest, 计划名称：user_operation】"
+Case1 << center() << caption(case1_title)
+# --一个列表--
+# 表头
+thead1 = ["ID", "执行编号", "用例ID", "用例外部ID", "用例名称", "用例套件", "执行结果", "运行时间"]
+Case1Thead1 = Case1 << thead() << tr()
+Case1Thead1 << th(thead1[0]) + th(thead1[1]) + th(thead1[2]) + th(thead1[3]) + th(thead1[4]) + th(thead1[5]) + th(thead1[6]) + th(thead1[7])
+# 表体
+tbody1 = ["151", "20180804110924", "1079", "APItest-1", "获取token", "获取token", "Pass", "2018-08-04 11:09:24"]
+Error = "Error"
+Case1Tbody1 = Case1 << tbody()
+Case1Tbody1 << tr() << th(tbody1[0], scope="row") + td(tbody1[1]) + td(tbody1[2]) + td(tbody1[3]) + td(tbody1[4]) + td(tbody1[5]) + td(tbody1[6]) + td(tbody1[7])
+Case1Tbody1 << tr() << th(tbody1[0], scope="row") + td(tbody1[1]) + td(tbody1[2]) + td(tbody1[3]) + td(tbody1[4]) + td(tbody1[5]) + td(p(Error, cl="label label-danger")) + td(tbody1[7])
+# --一个测试用例-- end
+
+# 测试用例 end
 
 page.printOut('Pyh_Template.html')
