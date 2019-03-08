@@ -1,4 +1,6 @@
 # Pyh
-ÍøÉÏµÄPyh×ÊÔ´ÓĞµãÎÊÌâ£¬¼ÓÔØºó»Ú±¨´í£¬ÕâÀï·ÅÏÂ¿ÉÒÔÓÃµÄ°æ±¾£¬Õâ¸öÊÇÖ§³ÖPython3µÄ£¬ÖÁÓÚPython2µÄ»°£¬Ã»ÓĞ²âÊÔ  
+ç½‘ä¸Šçš„Pyhèµ„æºæœ‰ç‚¹é—®é¢˜ï¼ŒåŠ è½½åæ‚”æŠ¥é”™ï¼Œè¿™é‡Œæ”¾ä¸‹å¯ä»¥ç”¨çš„ç‰ˆæœ¬ï¼Œè¿™ä¸ªæ˜¯æ”¯æŒPython3çš„ï¼Œè‡³äºPython2çš„è¯ï¼Œæ²¡æœ‰æµ‹è¯•  
 
-exampleÀïÃæÊÇPyhÊ¹ÓÃÑùÀı
+[![LICENSE](https://img.shields.io/github/license/HttpRunner/HttpRunner.svg)](https://github.com/HttpRunner/HttpRunner/blob/master/LICENSE) [![travis-ci](https://travis-ci.org/HttpRunner/HttpRunner.svg?branch=master)](https://travis-ci.org/HttpRunner/HttpRunner) [![coveralls](https://coveralls.io/repos/github/HttpRunner/HttpRunner/badge.svg?branch=master)](https://coveralls.io/github/HttpRunner/HttpRunner?branch=master) [![pypi version](https://img.shields.io/pypi/v/HttpRunner.svg)](https://pypi.python.org/pypi/HttpRunner) [![pyversions](https://img.shields.io/pypi/pyversions/HttpRunner.svg)](https://pypi.python.org/pypi/HttpRunner)
+
+exampleé‡Œé¢æ˜¯Pyhä½¿ç”¨æ ·ä¾‹
